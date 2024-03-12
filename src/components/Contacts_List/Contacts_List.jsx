@@ -6,7 +6,7 @@ const ContactsList = ({ contacts }) => {
 
   return (
     <>
-      {contacts && (
+      {
         <ul>
           {contacts.map(({ name, number, id }) => (
             <ContactItem
@@ -17,7 +17,7 @@ const ContactsList = ({ contacts }) => {
             />
           ))}
         </ul>
-      )}
+      }
     </>
   );
 };
