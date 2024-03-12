@@ -4,7 +4,7 @@ import { updateFilter } from 'store/filter/filterSlice';
 import { selectFilter } from 'store/selectors/selectors';
 const Filter = () => {
   const dispatch = useDispatch();
-  const { filter } = useSelector(selectFilter);
+  const filter = useSelector(selectFilter);
   return (
     <div>
       <input
